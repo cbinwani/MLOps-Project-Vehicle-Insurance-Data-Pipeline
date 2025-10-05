@@ -1,8 +1,10 @@
 name: Deploy Application Docker Image to EC2 instance
 # this is aws.yaml file
 on:
+  workflow_dispatch:
   push:
-    branches: [main]
+    branches:
+      - main
 
 jobs:
   Continuous-Integration:
